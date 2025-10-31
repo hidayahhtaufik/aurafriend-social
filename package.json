@@ -1,0 +1,16 @@
+{
+  "name": "aura-social",
+  "version": "1.0.0",
+  "description": "Decentralized social media platform with FHE encryption",
+  "scripts": {
+    "install:all": "cd contracts && npm install && cd ../backend && npm install && cd ../frontend && npm install",
+    "start:backend": "cd backend && npm start",
+    "start:frontend": "cd frontend && npm run dev",
+    "deploy": "cd contracts && npx hardhat run scripts/deploy.js --network sepolia",
+    "compile": "cd contracts && npx hardhat compile",
+    "test": "cd contracts && npx hardhat test"
+  },
+  "keywords": ["blockchain", "social-media", "fhe", "ethereum", "web3"],
+  "author": "Auranode",
+  "license": "MIT"
+}
